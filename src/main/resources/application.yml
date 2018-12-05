@@ -1,0 +1,22 @@
+#数据库连接
+spring: 
+    thymeleaf: 
+        cache: false
+        prefix: classpath:/templates/
+        suffix: .html
+        encoding: UTF-8
+        content-type: text/html
+        mode: LEGACYHTML5
+    datasource: 
+        url: jdbc:mysql://148.70.53.57:3306/park?characterEncoding=utf8&useSSL=true
+        username: root
+        password: trw549198212
+        driver-class-name: com.mysql.jdbc.Driver
+#服务器端口
+server: 
+  port: 8090
+  context-path: /
+logging:
+  config: classpath:logback-dev.xml
+  level: debug
+  
