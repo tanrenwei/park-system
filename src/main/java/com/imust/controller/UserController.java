@@ -46,7 +46,7 @@ public class UserController {
 	@RequestMapping("/logout")
 	public String logout(HttpSession session) {
 		session.removeAttribute("LogUser");
-		return "/join";
+		return "join";
 	}
 	//注册用户
 	@RequestMapping("/user-save")
