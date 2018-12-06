@@ -65,6 +65,7 @@ public class UserController {
 		model.addAttribute("userinfo",userinfo);
 		return "user-show";
 	}
+
 	//修改密码页
 	@RequestMapping("/password")
 	public String password() {
